@@ -567,6 +567,15 @@ define Device/xiaomi_miwifi-nano
 endef
 TARGET_DEVICES += xiaomi_miwifi-nano
 
+define Device/eastsoft_es-wifi-nano
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Eastsoft
+  DEVICE_MODEL := WiFi Nano
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
+  SUPPORTED_DEVICES += es-wifi-nano
+endef
+TARGET_DEVICES += eastsoft_es-wifi-nano
+
 define Device/zbtlink_zbt-we1226
   IMAGE_SIZE := 7872k
   DEVICE_VENDOR := Zbtlink

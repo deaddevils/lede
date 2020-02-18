@@ -13,8 +13,8 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: 0 20 * * *
+#  schedule:
+#    - cron: 0 20 * * *
 
 jobs:
 
@@ -64,7 +64,7 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_ramips=y
           CONFIG_TARGET_ramips_mt76x8=y
-          CONFIG_TARGET_ramips_mt76x8_DEVICE_xiaomi_miwifi-nano=y
+          CONFIG_TARGET_ramips_mt76x8_DEVICE_eastsoft_es-wifi-nano=y
           CONFIG_LIBSODIUM_MINIMAL=y
           CONFIG_PACKAGE_libev=y
           CONFIG_PACKAGE_libmbedtls=y
