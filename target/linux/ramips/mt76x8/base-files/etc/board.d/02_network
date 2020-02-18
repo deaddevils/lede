@@ -59,6 +59,7 @@ ramips_setup_interfaces()
 		ucidef_add_switch "switch0" \
 			"1:lan" "2:lan" "3:lan" "4:lan" "0:wan" "6@eth0"
 		;;
+	eastsoft,es-wifi-nano|\
 	hiwifi,hc5661a|\
 	hiwifi,hc5761a|\
 	mediatek,mt7628an-eval-board|\
@@ -115,10 +116,6 @@ ramips_setup_interfaces()
 	xiaomi,miwifi-nano)
 		ucidef_add_switch "switch0" \
 			"0:lan:2" "2:lan:1" "4:wan" "6@eth0"
-		;;
-	eastsoft,es-wifi-nano)
-		ucidef_add_switch "switch0" \
-			"1:lan:1" "2:lan:2" "4:wan" "6@eth0"
 		;;
 	zbtlink,zbt-we1226)
 		ucidef_add_switch "switch0" \
