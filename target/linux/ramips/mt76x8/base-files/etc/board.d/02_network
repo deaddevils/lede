@@ -61,7 +61,6 @@ ramips_setup_interfaces()
 		;;
 	eastsoft,es-wifi-nano|\
 	hiwifi,hc5661a|\
-	hiwifi,hc5761a|\
 	mediatek,mt7628an-eval-board|\
 	mercury,mac1200r-v2|\
 	totolink,lr1200|\
@@ -69,6 +68,10 @@ ramips_setup_interfaces()
 	wavlink,wl-wn575a3)
 		ucidef_add_switch "switch0" \
 			"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "6@eth0"
+		;;
+	hiwifi,hc5761a)
+		ucidef_add_switch "switch0" \
+			"0:lan" "1:lan" "4:wan" "6@eth0"
 		;;
 	iptime,a3)
 		ucidef_add_switch "switch0" \
