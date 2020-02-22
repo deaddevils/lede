@@ -62,24 +62,71 @@ jobs:
           touch ./.config
 
           cat >> .config <<EOF
+
           CONFIG_TARGET_ramips=y
           CONFIG_TARGET_ramips_mt76x8=y
           CONFIG_TARGET_ramips_mt76x8_DEVICE_eastsoft_es-wifi-nano=y
+          CONFIG_ARIA2_BITTORRENT=y
+          CONFIG_ARIA2_NOXML=y
+          CONFIG_ARIA2_OPENSSL=y
+          CONFIG_ARIA2_WEBSOCKET=y
+          CONFIG_KSMBD_SMB_INSECURE_SERVER=y
           CONFIG_LIBSODIUM_MINIMAL=y
+          CONFIG_PACKAGE_aria2=y
+          CONFIG_PACKAGE_ariang=y
+          CONFIG_PACKAGE_baidupcs-web=y
+          CONFIG_PACKAGE_hd-idle=y
+          CONFIG_PACKAGE_kmod-crypto-ccm=y
+          CONFIG_PACKAGE_kmod-crypto-cmac=y
+          CONFIG_PACKAGE_kmod-crypto-ctr=y
+          CONFIG_PACKAGE_kmod-crypto-des=y
+          CONFIG_PACKAGE_kmod-crypto-gcm=y
+          CONFIG_PACKAGE_kmod-crypto-gf128=y
+          CONFIG_PACKAGE_kmod-crypto-ghash=y
+          CONFIG_PACKAGE_kmod-crypto-hmac=y
+          CONFIG_PACKAGE_kmod-crypto-iv=y
+          CONFIG_PACKAGE_kmod-crypto-md4=y
+          CONFIG_PACKAGE_kmod-crypto-md5=y
+          CONFIG_PACKAGE_kmod-crypto-rng=y
+          CONFIG_PACKAGE_kmod-crypto-seqiv=y
+          CONFIG_PACKAGE_kmod-crypto-sha256=y
+          CONFIG_PACKAGE_kmod-crypto-sha512=y
+          CONFIG_PACKAGE_kmod-crypto-wq=y
+          CONFIG_PACKAGE_kmod-fs-ksmbd=y
+          CONFIG_PACKAGE_kmod-gre=y
+          CONFIG_PACKAGE_kmod-iptunnel=y
+          CONFIG_PACKAGE_kmod-nls-utf8=y
+          CONFIG_PACKAGE_ksmbd-server=y
           CONFIG_PACKAGE_libev=y
           CONFIG_PACKAGE_libmbedtls=y
+          CONFIG_PACKAGE_libnl-core=y
+          CONFIG_PACKAGE_libnl-genl=y
           CONFIG_PACKAGE_libsodium=y
+          CONFIG_PACKAGE_luci-app-aria2=y
+          CONFIG_PACKAGE_luci-app-baidupcs-web=y
+          CONFIG_PACKAGE_luci-app-cifsd=y
+          CONFIG_PACKAGE_luci-app-commands=y
+          CONFIG_PACKAGE_luci-app-hd-idle=y
           CONFIG_PACKAGE_luci-app-mwan3=y
           CONFIG_PACKAGE_luci-app-mwan3helper=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_obfs=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
+          CONFIG_PACKAGE_luci-i18n-aria2-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-cifsd-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-commands-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-hd-idle-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-mwan3helper-zh-cn=y
-          CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_mosquitto-nossl=y
           CONFIG_PACKAGE_mwan3=y
+          CONFIG_PACKAGE_pptpd=y
           CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
           CONFIG_PACKAGE_simple-obfs=y
+          CONFIG_PACKAGE_srelay=y
+          CONFIG_PACKAGE_v2ray-plugin=y
+          CONFIG_PACKAGE_wsdd2=y
+
           EOF
 
           sed -i 's/^[ \t]*//g' ./.config
