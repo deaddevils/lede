@@ -67,6 +67,7 @@ jobs:
           CONFIG_TARGET_ramips_mt76x8=y
           CONFIG_TARGET_ramips_mt76x8_DEVICE_eastsoft_es-wifi-nano=y
           CONFIG_LIBSODIUM_MINIMAL=y
+          CONFIG_PACKAGE_baidupcs-web=y
           CONFIG_PACKAGE_hd-idle=y
           CONFIG_PACKAGE_kmod-crypto-crc32c=y
           CONFIG_PACKAGE_kmod-fs-exfat=y
@@ -83,12 +84,12 @@ jobs:
           CONFIG_PACKAGE_libev=y
           CONFIG_PACKAGE_libmbedtls=y
           CONFIG_PACKAGE_libsodium=y
+          CONFIG_PACKAGE_luci-app-baidupcs-web=y
           CONFIG_PACKAGE_luci-app-hd-idle=y
           CONFIG_PACKAGE_luci-app-mwan3=y
           CONFIG_PACKAGE_luci-app-mwan3helper=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_obfs=y
-          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
           CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=y
           CONFIG_PACKAGE_luci-i18n-hd-idle-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
@@ -97,7 +98,6 @@ jobs:
           CONFIG_PACKAGE_ntfs-3g=y
           CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
           CONFIG_PACKAGE_simple-obfs=y
-          CONFIG_PACKAGE_v2ray-plugin=y
 
           EOF
 
