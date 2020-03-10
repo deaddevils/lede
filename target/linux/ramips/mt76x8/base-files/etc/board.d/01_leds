@@ -28,7 +28,7 @@ cudy,wr1000)
 eastsoft,es-wifi-nano)
 	ucidef_set_led_switch "wan" "wan" "$boardname:blue:wan" "switch0" "0x10"
 	ucidef_set_led_switch "lan" "lan" "$boardname:blue:lan" "switch0" "0x0f"
-#	ucidef_set_led_wlan "wifi" "wifi" "$boardname:blue:wifi" "phy0tpt"
+	ucidef_set_led_wlan "wifi" "wifi" "$boardname:blue:wifi" "phy0tpt"
 	;;
 glinet,gl-mt300n-v2)
 	set_wifi_led "$boardname:red:wlan"
